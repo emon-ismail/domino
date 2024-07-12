@@ -29,8 +29,130 @@
 
 </head>
 
-<body class="index-page ">
-  <div class="header container  d-flex justify-content-between align-items-center">
+<!-- modal for details -->
+<!-- Button trigger modal -->
+
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-fullscreen modal-dialog modal-dialog-scrollable">
+    <div class="modal-content" style="z-index: 1055; max-height: 90vh; overflow-y: auto;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Deluxe Feast</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="position-relative">
+          <img src="/assets/img/menu/menu-item-2.png" class="w-100" alt="Food Image">
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark-overlay-1"></div>
+          <div class="card-img-overlay text-white p-4">
+            <div class="mt-5 pt-5">
+              <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice from Green Chili.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+          <h5>Change Size</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="sizeOptions" id="sizeRegular">
+            <label class="form-check-label" for="sizeRegular">
+              Regular (Serves 1) <span class="float-end">৳ 599</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="sizeOptions" id="sizeMedium" checked>
+            <label class="form-check-label" for="sizeMedium">
+              Medium (Serves 2) <span class="float-end">৳ 1099</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="sizeOptions" id="sizeLarge">
+            <label class="form-check-label" for="sizeLarge">
+              Large (Serves 4) <span class="float-end">৳ 1799</span>
+            </label>
+          </div>
+          <h5 class="mt-4">Change Crust</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="crustOptions" id="crustClassic" checked>
+            <label class="form-check-label" for="crustClassic">
+              Classic Hand Tossed <span class="float-end">৳ 1099</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="crustOptions" id="crustThin">
+            <label class="form-check-label" for="crustThin">
+              Thin Crust <span class="float-end">৳ 1099</span>
+            </label>
+          </div>
+          <h5 class="mt-4">Add Veg Toppings</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingOnion">
+            <label class="form-check-label d-flex justify-content-between" for="toppingOnion">
+              Onion <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingJalapeno">
+            <label class="form-check-label d-flex justify-content-between" for="toppingJalapeno">
+              Jalapeno <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingOlives">
+            <label class="form-check-label d-flex justify-content-between" for="toppingOlives">
+              Black Olives <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingCapsicum">
+            <label class="form-check-label d-flex justify-content-between" for="toppingCapsicum">
+              Capsicum <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingPaprika">
+            <label class="form-check-label d-flex justify-content-between" for="toppingPaprika">
+              Red Paprika <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingBellPeppers">
+            <label class="form-check-label d-flex justify-content-between" for="toppingBellPeppers">
+              Red & Yellow Bell Peppers <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingMushroom">
+            <label class="form-check-label d-flex justify-content-between" for="toppingMushroom">
+              Mushroom <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingChilli">
+            <label class="form-check-label d-flex justify-content-between" for="toppingChilli">
+              Green Chilli <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="toppingCorn">
+            <label class="form-check-label d-flex justify-content-between" for="toppingCorn">
+              Sweet Corn <span class="float-end">+৳ 99.00</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer bg-danger text-white d-flex justify-content-between align-items-center">
+        <span>Medium | Classic Hand Tossed,Medium</span>
+        <span>৳ 1099</span>
+        <button type="button" class="btn btn-light">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<body class="index-page  m-0">
+  <div class="header mx-4  d-flex justify-content-between align-items-center my-3">
     <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
@@ -101,377 +223,105 @@
   </a>
 </div>
 
-  
-  
-
-
-
-    <!-- Menu Section -->
-    <section id="menu" class="menu section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Menu</h2>
-        <p><span>Check Our</span> <span class="description-title">Yummy Menu</span></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <ul class="nav nav-tabs d-flex justify-content-center sticky-nav-tabs" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-                  <h4>Starters</h4>
-              </a>
-          </li><!-- End tab nav item -->
-  
-          <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-                  <h4>Breakfast</h4>
-              </a>
-          </li><!-- End tab nav item -->
-  
-          <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
-                  <h4>Lunch</h4>
-              </a>
-          </li><!-- End tab nav item -->
-  
-          <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-                  <h4>Dinner</h4>
-              </a>
-          </li><!-- End tab nav item -->
-      </ul>
-  
-
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="tab-pane fade active show" id="menu-starters">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Starters</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Starter Menu Content -->
-
-          <div class="tab-pane fade" id="menu-breakfast">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Breakfast</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Breakfast Menu Content -->
-
-          <div class="tab-pane fade" id="menu-lunch">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Lunch</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Lunch Menu Content -->
-
-          <div class="tab-pane fade" id="menu-dinner">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Dinner</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Dinner Menu Content -->
-
-        </div>
-
+  <!-- Login Card -->
+<section class="mx-4 mb-4">
+  <div class="bg-primary d-flex justify-content-between align-items-center py-2 px-3 rounded shadow-sm">
+    <div class="d-flex align-items-center">
+      <i class="bi bi-person-circle h4 me-3 text-white"></i>
+      <div>
+        <p class="text-white mb-1">Login for</p>
+        <p class="text-white mb-0">Best experience</p>
       </div>
+    </div>
+    <button type="button" class="btn btn-outline-light">Login</button>
+  </div>
+</section>
+<!-- Three Button Section -->
+<section class="mx-4 my-3 ">
+  <div class="row text-center">
+    <div class="col-md-4 mb-3">
+      <button type="button" class="btn btn-light w-100 h-90 py-2 custom-btn">
+        <strong>Delivery</strong>
+        <p class="mb-0">Select Location</p>
+      </button>
+    </div>
+    <div class="col-md-4 mb-3">
+      <button type="button" class="btn btn-dark w-100 hh-90 py-2custom-btn">
+        <strong>Takeaway</strong>
+        <p class="mb-0">2.1 KM</p>
+      </button>
+    </div>
+    <div class="col-md-4 mb-3">
+      <button type="button" class="btn btn-light w-100 h-90 py-2 custom-btn">
+        <strong>Dine-in</strong>
+        <p class="mb-0">Select Store</p>
+      </button>
+    </div>
+  </div>
+</section>
 
-    </section><!-- /Menu Section -->
+<!-- Search Input Section -->
+<section class="mx-4 my-3">
+  <div class="input-group rounded shadow-sm">
+    <input type="text" class="form-control border-0" placeholder="Search Pizzas, Sides & more..." aria-label="Search">
+    <span class="input-group-text bg-white border-0">
+      <i class="bi bi-search"></i>
+    </span>
+  </div>
+</section>
 
+<!-- Circular Images Section -->
+<section class="mx-4 my-3">
+  <div class="row text-center">
+    <div class="col-md-2 col-6 mb-4">
+      <a href="#pizza" data-bs-toggle="tab">
+        <img src="/assets/img/menu/pizza_rounded.png" class="rounded-circle img-fluid" alt="Pizza">
+        <h6 class="mt-2">Pizza</h6>
+      </a>
+    </div>
+    <div class="col-md-2 col-6 mb-4">
+      <a href="#loaded-pizza"data-bs-toggle="loaded-pizza">
+        <img src="/assets/img/menu/loaded_pizza_rounded.png" class="rounded-circle img-fluid" alt="Loaded Pizza">
+        <h6 class="mt-2">Loaded Pizza</h6>
+      </a>
+    </div>
+    <div class="col-md-2 col-6 mb-4">
+      <a href="#sides" data-bs-toggle="tab">
+        <img src="/assets/img/menu/sides_rounded.png" class="rounded-circle img-fluid" alt="Sides">
+        <h6 class="mt-2">Sides</h6>
+      </a>
+    </div>
+    <div class="col-md-2 col-6 mb-4">
+      <a href="#RiceMealsCombos" data-bs-toggle="tab">
+        <img src="/assets/img/menu/ricemeal.png" class="rounded-circle img-fluid" alt="Rice Meals & Combo">
+        <h6 class="mt-2">Rice Meals & Combo</h6>
+      </a>
+    </div>
+    <div class="col-md-2 col-6 mb-4">
+      <a href="#Beverages" data-bs-toggle="tab">
+        <img src="/assets/img/menu/beverages_212023_rounded.png" class="rounded-circle img-fluid" alt="Beverages">
+        <h6 class="mt-2">Beverages</h6>
+      </a>
+    </div>
+    <div class="col-md-2 col-6 mb-4">
+      <a href="#dessert" data-bs-toggle="tab">
+        <img src="/assets/img/menu/desserts_rounded.png" class="rounded-circle img-fluid" alt="Desserts">
+        <h6 class="mt-2">Desserts</h6>
+      </a>
+    </div>
+  </div>
+</section>
 
+<!-- Food Card Section -->
+<section class="mx-4 mt-5">
+  <h4>Recommended</h4>
 
     <!-- Events Section -->
-    <section id="events" class="events section">
+    <section id="events" class="events section bg-white">
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
+        <div class="swiper init-swiper bg-white">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -497,39 +347,128 @@
               }
             }
           </script>
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper ">
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
-              <h3>Custom Parties</h3>
-              <div class="price align-self-start">$99</div>
-              <p class="description">
-                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-              </p>
-            </div><!-- End Event item -->
+           <!-- End Event item -->
+           <div class="bg-white card h-100 shadow-sm swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="position-relative">
+              <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+              </div>
+              <div class="card-body text-white bg-dark-overlay">
+                <h4 class="card-title">Deluxe Feast</h4>
+                <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                <hr class="bg-light">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price">৳ 1099</span>
+                    <p class="m-0">Medium | Classic Hand Tossed</p>
+                  </div>
+                  <button class="btn btn-danger">Add +</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
-              <h3>Private Parties</h3>
-              <div class="price align-self-start">$289</div>
-              <p class="description">
-                In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.
-              </p>
-            </div><!-- End Event item -->
+          <!-- End Event item -->
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
-              <h3>Birthday Parties</h3>
-              <div class="price align-self-start">$499</div>
-              <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
-              </p>
-            </div><!-- End Event item -->
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-4.jpg)">
-              <h3>Wedding Parties</h3>
-              <div class="price align-self-start">$899</div>
-              <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
-              </p>
-            </div><!-- End Event item -->
+            <!-- End Event item -->
+            <div class="card h-100 shadow-sm swiper-slide event-item d-flex flex-column justify-content-end">
+              <div class="position-relative">
+                <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                  <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                </div>
+                <div class="card-body text-white bg-dark-overlay">
+                  <h4 class="card-title">Deluxe Feast</h4>
+                  <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                  <hr class="bg-light">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <span class="price">৳ 1099</span>
+                      <p class="m-0">Medium | Classic Hand Tossed</p>
+                    </div>
+                    <button class="btn btn-danger">Add +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Event item -->
+
+             <!-- End Event item -->
+             <div class="card h-100 shadow-sm swiper-slide event-item d-flex flex-column justify-content-end">
+              <div class="position-relative">
+                <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                  <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                  <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                </div>
+                <div class="card-body text-white bg-dark-overlay">
+                  <h4 class="card-title">Deluxe Feast</h4>
+                  <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                  <hr class="bg-light">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <span class="price">৳ 1099</span>
+                      <p class="m-0">Medium | Classic Hand Tossed</p>
+                    </div>
+                    <button class="btn btn-danger">Add +</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Event item -->
+
+           <!-- End Event item -->
+           <div class="card h-100 shadow-sm swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="position-relative">
+              <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+              </div>
+              <div class="card-body text-white bg-dark-overlay">
+                <h4 class="card-title">Deluxe Feast</h4>
+                <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                <hr class="bg-light">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price">৳ 1099</span>
+                    <p class="m-0">Medium | Classic Hand Tossed</p>
+                  </div>
+                  <button class="btn btn-danger">Add +</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Event item -->
+
+           <!-- End Event item -->
+           <div class="card h-100 shadow-sm swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="position-relative">
+              <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+              </div>
+              <div class="card-body text-white bg-dark-overlay">
+                <h4 class="card-title">Deluxe Feast</h4>
+                <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                <hr class="bg-light">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price">৳ 1099</span>
+                    <p class="m-0">Medium | Classic Hand Tossed</p>
+                  </div>
+                  <button class="btn btn-danger">Add +</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Event item -->
 
           </div>
           <div class="swiper-pagination"></div>
@@ -539,135 +478,826 @@
 
     </section><!-- /Events Section -->
 
+</section>
+
+<!-- Exclusive Offer -->
+<section class="mx-4 my-3">
+  <h4>Exclusive Offer</h4>
+  <div class="container-fluid p-0">
+    <img class="img-fluid w-100" src="/assets/img/menu/banner.jpg" alt="Banner Image">
+  </div>
+</section>
+<!-- Exclusive Offer -->
+  
+
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section  my-5">
+
+      <!-- Section Title -->
+      <div class="mx-4 py-5">
+
+        <ul class="nav nav-tabs d-flex justify-content-center sticky-nav-tabs" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#pizza">
+                  <h4>Pizza</h4>
+              </a>
+          </li><!-- End tab nav item -->
+  
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#RiceMealsCombos">
+                  <h4>  Rice Meals & Combos</h4>
+              </a>
+          </li><!-- End tab nav item -->
+  
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#sides">
+                  <h4> Sides</h4>
+              </a>
+          </li><!-- End tab nav item -->
+  
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#Beverages">
+                  <h4>Beverages</h4>
+              </a>
+          </li><!-- End tab nav item -->
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#best-seller">
+                  <h4>Bestsellers</h4>
+              </a>
+          </li><!-- End tab nav item -->
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#loaded-pizza">
+                  <h4>Loaded Pizza</h4>
+              </a>
+          </li><!-- End tab nav item -->
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#dessert">
+                  <h4>Desserts</h4>
+              </a>
+          </li><!-- End tab nav item -->
+          
+      </ul>
+  
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="pizza">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Pizza</h3>
+            </div>
+
+            <div class="row ">
+              <!-- Card -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="RiceMealsCombos">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Rice Meals & Combos</h3>
+            </div>
+
+            <div class="row">
+              <!-- Card -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="sides">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Sides</h3>
+            </div>
+
+            <div class="row">
+              <!-- Card -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+            </div>
+          </div><!-- End Lunch Menu Content -->
+          <div class="tab-pane fade" id="dessert">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Desserts</h3>
+            </div>
+
+            <div class="row">
+              <!-- Card -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="Beverages">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Beverages</h3>
+            </div>
+
+            <div class="row">
+              <!-- Card -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+
+
+
+          <div class="tab-pane fade" id="best-seller">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Best-Sellers</h3>
+            </div>
+
+            <div class="row">
+              <!-- Card -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+            </div>
+          </div><!-- End Dinner Menu Content -->
+          <div class="tab-pane fade" id="loaded-pizza">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Loaded Pizza</h3>
+            </div>
+
+            <div class="row">
+              <!-- Card -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4 ">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+              <div class="col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card h-100 shadow-sm bg-black">
+                  <div class="position-relative">
+                    <div class="card-img" style="background-image: url('/assets/img/menu/pizza.jpg');">
+                      <span class="badge bg-success position-absolute top-0 start-0 m-2">Popular in Bestsellers</span>
+                      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Customize</button>
+                    </div>
+                    <div class="card-body text-white bg-dark-overlay">
+                      <h4 class="card-title">Deluxe Feast</h4>
+                      <p class="card-text">A flavor-packed ride with Spicy Chicken, Chicken Rashers, seasoned Mushrooms, crunchy Capsicum, and a kick of spice...</p>
+                      <hr class="bg-light">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <span class="price">৳ 1099</span>
+                          <p class="m-0">Medium | Classic Hand Tossed</p>
+                        </div>
+                        <button class="btn btn-danger">Add +</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the card as needed -->
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+
+
+        </div>
+
+        
+
+      </div>
+
+    </section><!-- /Menu Section -->
+    
+    
+
+
+
+
 
 
     
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-        <p><span>Check</span> <span class="description-title">Our Gallery</span></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "centeredSlides": true,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 0
-                },
-                "768": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                },
-                "1200": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Gallery Section -->
+    
 
    
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
-          </div>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Contact</h4>
-            <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Yummy</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+ 
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

@@ -75,15 +75,144 @@ a:hover {
 }
 
 h1,
-h2,
+
 h3,
-h4,
-h5,
-h6 {
+
+h5 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+h6{
+  color: #1f1f24;
+}
+/* 3button */
+.custom-btn {
+  border-radius: 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+.custom-btn strong {
+  display: block;
+}
+
+.custom-btn:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.custom-btn:hover p {
+  color: #fff;
+}
+/* 3button */
+/* input */
+.input-group {
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.input-group-text {
+  background-color: transparent;
+}
+
+.bi-search {
+  color: #adb5bd;
+}
+/* input */
+
+/* circuler */
+.rounded-circle {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+/* circuler */
+
+/* card */
+.card-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.card-body {
+  background: rgba(0, 0, 0, 0.7); /* Black overlay for text readability */
+  color: white;
+  padding: 1rem;
+}
+
+.btn-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .card-img {
+    height: 150px;
+  }
+}
+/* card */
+
+/* modal */
+.modal-body img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.bg-dark-overlay-1 {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.form-check-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-check-input {
+  margin-top: 0.3rem;
+}
+
+.modal-content {
+  z-index: 1055 !important;
+}
+
+.modal-backdrop.show {
+  z-index: 1054 !important;
+}
+
+@media (max-width: 576px) {
+  .modal-body img {
+    height: 200px;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* modal */
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
@@ -181,7 +310,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  /* padding: 20px 0; */
   transition: all 0.5s;
   z-index: 997;
 }
@@ -703,7 +832,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  /* padding: 60px 0; */
   scroll-margin-top: 92px;
   overflow: clip;
 }
@@ -1143,83 +1272,7 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
 
-.testimonials .testimonial-item .testimonial-content {
-  border-left: 3px solid var(--accent-color);
-  padding-left: 30px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  border-radius: 50%;
-  border: 4px solid var(--background-color);
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin: 0 0 10px 0;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-}
-
-.testimonials .swiper-wrapper {
-  height: auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Events Section
@@ -1231,13 +1284,14 @@ section,
 .events .event-item {
   background-size: cover;
   background-position: cente;
-  min-height: 600px;
-  padding: 30px;
+  min-height: 150px;
+  /* padding: 30px; */
+
 }
 
 @media (max-width: 575px) {
   .events .event-item {
-    min-height: 500px;
+    min-height: 250px;
   }
 }
 
@@ -1267,7 +1321,7 @@ section,
 
 .events .event-item .description {
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(199, 11, 11, 0.8);
   position: relative;
 }
 
